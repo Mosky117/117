@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D2F4B;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+.logo{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.menu a{
+    border: transparent;
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover:not(.logo){
+    text-decoration: underline;
+}
+
+.nav-item a:hover{
+    color: hsla(0, 0%, 100%, 0.536);
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(34, 34, 34, 0.98);
+}
+.menu li{
+    display: inline;
+    margin-right: 40px;
+}
+.hamburger{
+    display: none;
+}
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.page img{
+    width: 100%;
+    display: block;
+
+}
+.grid-container{
+    display: grid;
+    grid-gap: 20px;
+}
+.grid-container p{
+    font-size: 40px;
+    margin-top: 25%;
+    grid-column: 2;
+    grid-row: 1;
+}
+.grid-container img{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.motto{
+    background-color: rgba(50, 49, 49, 0.98);
+}
+.motto p{
+    text-align: center;
+    color: white;
+    padding-top: 3%;
+    margin-top: 5%;
+}
+.motto img{
+    width: 100%;
+    display: block;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        justify-content: space-between;
+    }
+    .menu li{
+        display: flex;
+        justify-content: center;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active span:nth-child(2){
+        opacity: 0;
+      }
+     .hamburger.active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+     .hamburger.active span:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+      }
+      .menu a{
+        margin-left: 10%;
+      }
+     .menu.active{
+        left: 0;
+      }
+      .grid-container img{
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .grid-container p{
+        font-size: 24px;
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: center;
+      }
+      .motto p{
+        margin-top: 20%;
+        font-size: small;
+      }
+}
+@media only screen and (min-width: 961px){
+    .page{
+        width: 960px;
+        margin: 0 auto;
+    }
+    .motto img{
+        width: 60%;
+        margin: 0 auto;
+    }
+}

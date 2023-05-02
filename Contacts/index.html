@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Montserrat:wght@100&family=Roboto+Mono:wght@300&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="my-navbar">
+            <a class="logo" href="../index.html" style="color: yellowgreen;">davimosky</a>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Me</a>
+                </li>
+                <li>
+                    <a href="../Resume/">Resume</a>
+                </li>
+                <li>
+                    <a aria-current="page" href="" style="text-decoration: underline;">Contacts</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="page">
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="nmessage">Message</label>
+            <textarea name="message" id="message" required></textarea>
+            <br>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+
+
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

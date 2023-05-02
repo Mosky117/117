@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    background-color: #0D2F4B;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+.logo{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.menu a{
+    border: transparent;
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover:not(.logo){
+    text-decoration: underline;
+}
+
+.nav-item a:hover{
+    color: hsla(0, 0%, 100%, 0.536);
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(34, 34, 34, 0.98);
+}
+.menu li{
+    display: inline;
+    margin-right: 40px;
+}
+.hamburger{
+    display: none;
+}
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #dfdfdf;
+}
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(204, 202, 202);
+    padding-bottom: 8%;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        justify-content: space-between;
+    }
+    .menu li{
+        display: flex;
+        justify-content: center;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active span:nth-child(2){
+        opacity: 0;
+      }
+     .hamburger.active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+     .hamburger.active span:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+      }
+      .menu a{
+        margin-left: 10%;
+      }
+     .menu.active{
+        left: 0;
+        size: small;
+      }
+}
+@media only screen and (min-width: 961px){
+    .page{
+        width: 960px;
+        margin: 0 auto;
+    }
+    .motto img{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
