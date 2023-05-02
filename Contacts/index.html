@@ -38,18 +38,24 @@
     </header>
     
     <div class="page">
-        <form id="contact-form">
-            <label for="name">Name</label>
+        <form id="contact-form" class="form">
+            <label for="name"><strong>Name</strong></label>
             <input type="text" name="name" id="name" required>
-            <label for="email">email</label>
+            <label for="email"><strong>Email</strong></label>
             <input type="email" name="email" id="email" required>
-            <label for="nmessage">Message</label>
-            <textarea name="message" id="message" required></textarea>
+            <label for="nmessage"><strong>Message</strong></label>
+            <textarea name="message" id="message" required ></textarea>
             <br>
             <button type="submit" class="submit-btn">Send</button>
         </form>
     </div>
 
+    <footer>
+        <section class="container">
+            <img src="../assets/img/github.svg" alt="">
+            <img src="../assets/img/linkedin.svg" alt="">
+        </section>
+    </footer>
 
     <script type="text/javascript" src="../assets/js/script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
