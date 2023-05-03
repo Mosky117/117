@@ -260,4 +260,7 @@ footer{
         margin: 0 auto;
         margin-top: 5%;
     }
+    footer{
+        position: absolute;
+    }
 }
