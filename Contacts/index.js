@@ -37,3 +37,26 @@ contact_form.addEventListener('submit', e=>{
         submit_btn.innerText='Something went wrong';
     });
 });
+
+function checkKeycode(e)
+{
+  var keycode;
+
+  if (window.event)
+    keycode = window.event.keyCode;
+  else
+    if (e) keycode = e.which;
+
+  switch (keycode)
+  {
+    case 37:  // left arrow
+      document.location = "../Resume";
+    break;
+
+    case 39:  // right arrow
+      document.location = "../";
+    break;
+  }
+}
+
+document.onkeydown = checkKeycode;
