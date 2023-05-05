@@ -87,7 +87,8 @@ body{
     margin-top: 5%;
 }
 .motto img{
-    width: 100%;
+    width: 50%;
+    border-radius: 50px;
     display: block;
     padding-left: 15%;
     padding-right: 15%;
