@@ -78,6 +78,7 @@ body{
 
 .motto{
     background-color: rgba(50, 49, 49, 0.98);
+    padding-bottom: 10%;
 }
 .motto p{
     font-size: x-large;
@@ -85,19 +86,15 @@ body{
     color: white;
     padding-top: 3%;
     margin-top: 5%;
+    padding-bottom: 3%;
 }
+
 .motto img{
-    width: 50%;
-    border-radius: 50px;
     display: block;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 10%;
-    padding-top: 5%;
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 960px){
     .navbar{
         justify-content: space-between;
     }
@@ -149,11 +146,20 @@ body{
         text-align: center;
         margin-right: 15%;
       }
+      .motto{
+        padding-bottom: 20%;
+      }
       .motto p{
         margin-top: 15%;
         padding-top: 8%;
+        padding-bottom: 8%;
         font-size: large;
       }
+      .motto img{
+        width: 50%;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 961px){
@@ -162,7 +168,8 @@ body{
         margin: 0 auto;
     }
     .motto img{
-        width: 60%;
+        width: 20%;
+        border-radius: 50%;
         margin: 0 auto;
     }
 }
