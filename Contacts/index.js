@@ -50,11 +50,11 @@ function checkKeycode(e)
   switch (keycode)
   {
     case 37:  // left arrow
-      document.location = "../Resume";
+      document.location = "/117/Resume";
     break;
 
     case 39:  // right arrow
-      document.location = "../";
+      document.location = "/117";
     break;
   }
 }
