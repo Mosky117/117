@@ -1,4 +1,3 @@
-# 117 
 The website is made of 3 pages:
 - Home, a short introduction of myself;
 - Resume, where you can read my skills and experiences;
