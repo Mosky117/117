@@ -76,6 +76,9 @@ body{
     grid-column: 1;
     grid-row: 1;
 }
+#its-me-text{
+    color: white;
+}
 
 .motto{
     background-color: rgba(50, 49, 49, 0.98);

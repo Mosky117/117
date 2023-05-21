@@ -192,7 +192,9 @@ body{
       .resume.right{
         margin-left: 0;
     }
-
+    #second-text{
+        padding-bottom: 5px;
+    }
 }
 @media only screen and (min-width: 961px){
     .page{
