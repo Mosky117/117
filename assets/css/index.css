@@ -23,6 +23,9 @@ body{
 .menu a:hover:not(.logo){
     text-decoration: underline;
 }
+#current-page{
+    text-decoration: underline;
+}
 
 .nav-item a:hover{
     color: hsla(0, 0%, 100%, 0.536);
