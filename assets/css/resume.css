@@ -124,16 +124,16 @@ body{
     height: 6px;
     background-color: rgb(13, 47, 75) ;
 }
-.inside-bar .html{
+.html{
     width: 70%;
 }
-.inside-bar .css{
+.css{
     width: 70%;
 }
-.inside-bar .js{
+.js{
     width: 40%;
 }
-.inside-bar .Cplus{
+.Cplus{
     width: 25%;
 }
 
